@@ -1,10 +1,10 @@
-# AI-Founder
+# AI 替你当老板 / Let AI Be Your Boss
 
-**An Autonomous AI Entrepreneur Framework**
+**An Autonomous AI Entrepreneur Framework / 自主 AI 企业家框架**
 
-AI-Founder 是一个概念性框架，旨在让 AI 具备企业家的核心能力——自主发现市场需求、创建公司、招募人才、交付产品并持续盈利。
+让 AI 具备企业家的核心能力——自主发现市场需求、创建公司、招募人才、交付产品并持续盈利。你的下一个老板，可能不是人。
 
-AI-Founder is a conceptual framework designed to give AI the core capabilities of an entrepreneur — autonomously discovering market demands, creating companies, recruiting talent, delivering products, and sustaining profitability.
+Empowering AI with the core capabilities of an entrepreneur — autonomously discovering market demands, creating companies, recruiting talent, delivering products, and sustaining profitability. Your next boss might not be human.
 
 ---
 

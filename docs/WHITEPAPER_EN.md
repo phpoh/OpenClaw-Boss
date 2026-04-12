@@ -1,4 +1,4 @@
-# AI-Founder: An Autonomous AI Entrepreneur Framework
+# Let AI Be Your Boss: An Autonomous AI Entrepreneur Framework
 
 **Whitepaper v0.1 — April 2026**
 
