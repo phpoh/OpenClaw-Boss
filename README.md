@@ -92,13 +92,22 @@ OpenClaw-Boss/
 │   ├── WHITEPAPER_EN.md        # 🇬🇧 English whitepaper
 │   └── WHITEPAPER_CN.md        # 🇨🇳 中文白皮书
 ├── skills/
-│   ├── market-sense.md          # 👀 Market sensing
-│   ├── demand-validate.md       # ⚖️ Demand validation
-│   ├── company-form.md          # 🏢 Company formation
-│   ├── team-assemble.md         # 👥 Team assembly
-│   ├── product-build.md         # 🛠️ Product building
-│   ├── finance-manage.md        # 💰 Finance management
-│   └── growth-scale.md          # 📈 Growth & scaling
+│   ├── cn/                      # 🇨🇳 中文技能定义（严谨版）
+│   │   ├── market-sense.md
+│   │   ├── demand-validate.md
+│   │   ├── company-form.md
+│   │   ├── team-assemble.md
+│   │   ├── product-build.md
+│   │   ├── finance-manage.md
+│   │   └── growth-scale.md
+│   └── en/                      # 🇬🇧 English skill definitions (rigorous)
+│       ├── market-sense.md
+│       ├── demand-validate.md
+│       ├── company-form.md
+│       ├── team-assemble.md
+│       ├── product-build.md
+│       ├── finance-manage.md
+│       └── growth-scale.md
 └── LICENSE
 ```
 
