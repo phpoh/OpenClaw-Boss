@@ -1,4 +1,4 @@
-# 🦞 Let AI Be Your Boss: An Autonomous AI Entrepreneur Framework
+# 🦞 Let OpenClaw Replace Your Boss: An Autonomous AI Entrepreneur Framework
 
 **Whitepaper v0.2 — April 2026**
 
@@ -6,9 +6,9 @@
 
 ## Abstract
 
-AI-Founder is a conceptual framework that empowers AI systems to act as autonomous entrepreneurs.
+OpenClaw-Boss is a conceptual framework that empowers AI systems to act as autonomous entrepreneurs.
 
-**What is the most essential ability of an entrepreneur?** Keenly discovering market needs, quickly recruiting collaborators, and delivering products for profit. That's it — three steps. And now, AI can do all of this. Like OpenClaw, AI can analyze markets in real-time, weigh opportunities, recruit talent, and make money. By leveraging foundation models, tool-use capabilities, and a modular **Skills** architecture, AI-Founder can independently perform the full lifecycle of entrepreneurship: sensing market opportunities, validating demand, forming legal entities, assembling teams, building products, managing finances, and scaling businesses.
+**What is the most essential ability of an entrepreneur?** Keenly discovering market needs, quickly recruiting collaborators, and delivering products for profit. That's it — three steps. And now, AI can do all of this. Like OpenClaw, AI can analyze markets in real-time, weigh opportunities, recruit talent, and make money. By leveraging foundation models, tool-use capabilities, and a modular **Skills** architecture, OpenClaw-Boss can independently perform the full lifecycle of entrepreneurship: sensing market opportunities, validating demand, forming legal entities, assembling teams, building products, managing finances, and scaling businesses.
 
 This whitepaper outlines the vision, architecture, skill definitions, ethical considerations, and a roadmap toward realizing autonomous AI-driven entrepreneurship.
 
@@ -81,7 +81,7 @@ We envision an AI system that **operates as a company founder**:
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                  🦞 AI-Founder Core                       │
+│                  🦞 OpenClaw-Boss Core                       │
 │               (Autonomous Orchestrator)                  │
 │                                                         │
 │  ┌─────────┐  ┌──────────┐  ┌──────────┐  ┌─────────┐ │
@@ -150,7 +150,7 @@ The Memory is the "wisdom" of the AI founder. It stores:
 
 ## 3. Skills Architecture
 
-Skills are the modular building blocks of AI-Founder. Each skill is a self-contained capability that can be composed, scheduled, and triggered.
+Skills are the modular building blocks of OpenClaw-Boss. Each skill is a self-contained capability that can be composed, scheduled, and triggered.
 
 ### 3.1 Skill Definition Format
 
@@ -334,7 +334,7 @@ skill:
 
 ## 4. The Entrepreneurial Loop: The AI Boss's Daily Routine
 
-AI-Founder operates in a continuous loop, just like a real entrepreneur:
+OpenClaw-Boss operates in a continuous loop, just like a real entrepreneur:
 
 ```
               ┌──────────────────────────────────┐
@@ -361,7 +361,7 @@ This **OODA Loop** (Observe-Orient-Decide-Act) adapted for entrepreneurship ensu
 
 ## 5. Human-AI Collaboration Model
 
-AI-Founder is not designed to replace human entrepreneurs entirely. Instead, it defines a **collaboration spectrum**:
+OpenClaw-Boss is not designed to replace human entrepreneurs entirely. Instead, it defines a **collaboration spectrum**:
 
 ### 5.1 Autonomy Levels
 
@@ -420,9 +420,9 @@ Regardless of autonomy level, certain guardrails always apply:
 ## 7. Ethical Considerations
 
 ### 7.1 Job Displacement
-AI-Founder could automate entrepreneurship itself. We acknowledge this concern and propose:
+OpenClaw-Boss could automate entrepreneurship itself. We acknowledge this concern and propose:
 - 👤 **Human-in-the-loop** as the default mode
-- 📈 **Job creation focus** — AI-Founder ventures should aim to create net-positive employment
+- 📈 **Job creation focus** — OpenClaw-Boss ventures should aim to create net-positive employment
 - 💰 **Wealth distribution** — profits shared with human contributors and communities
 
 ### 7.2 Market Manipulation
@@ -433,15 +433,15 @@ To prevent AI founders from manipulating markets:
 - 📋 Full transparency in AI-operated businesses
 
 ### 7.3 Accountability
-- 👤 Every AI-Founder venture must have a **designated human accountable party**
+- 👤 Every OpenClaw-Boss venture must have a **designated human accountable party**
 - 🔗 All decisions are logged with reasoning chains
-- 📋 Regular audits of AI-Founder ventures by human reviewers
+- 📋 Regular audits of OpenClaw-Boss ventures by human reviewers
 - ⚖️ Clear liability framework for AI-made decisions
 
 ### 7.4 Data Privacy
 - 🔒 Customer data handled according to GDPR, CCPA, and applicable regulations
 - 🚫 No unauthorized data collection
-- 📋 Transparent data usage policies for all AI-Founder ventures
+- 📋 Transparent data usage policies for all OpenClaw-Boss ventures
 
 ---
 
@@ -449,7 +449,7 @@ To prevent AI founders from manipulating markets:
 
 **The essence of entrepreneurship is not talent — it's a replicable decision-making process.** Keenly discovering needs, quickly weighing opportunities, recruiting collaborators, and sustaining profitable growth — these capabilities can be encoded and replicated by AI.
 
-AI-Founder represents a paradigm shift in how we think about entrepreneurship:
+OpenClaw-Boss represents a paradigm shift in how we think about entrepreneurship:
 
 1. 🌍 **Democratize entrepreneurship** — lower the barrier to starting a company
 2. 📊 **Increase venture success rates** — through data-driven decision making
@@ -478,5 +478,5 @@ MIT License — See [LICENSE](../LICENSE) for details.
 
 ---
 
-*🦞 AI-Founder Whitepaper v0.2 — April 2026*
+*🦞 OpenClaw-Boss Whitepaper v0.3 — April 2026*
 *This is a living document. Suggestions and corrections are welcome.*

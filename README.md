@@ -1,10 +1,10 @@
-# 🦞 AI 替你当老板 / Let AI Be Your Boss
+# 🦞 让 OpenClaw 代替老板 / Let OpenClaw Replace Your Boss
 
 **An Autonomous AI Entrepreneur Framework / 自主 AI 企业家框架**
 
-> 💡 **核心思想：** 企业家最核心的能力是什么？——**敏锐发现市场需求，快速招人合作，交付产品赚钱。** 现在，AI 已经可以做到这一切。像 OpenClaw（小龙虾）一样，AI 可以实时分析市场、权衡机遇、招募人才、实现盈利。你的下一个老板，可能不是人。
+> 💡 **核心思想：** 企业家最核心的能力是什么？——**敏锐发现市场需求，快速招人合作，交付产品赚钱。** 现在，OpenClaw（小龙虾）已经可以做到这一切——实时分析市场、权衡机遇、招募人才、实现盈利。你的下一个老板，可能是一只小龙虾。
 
-> 💡 **Core Insight:** What is the most essential ability of an entrepreneur? — **Keenly discovering market needs, quickly recruiting collaborators, and delivering products for profit.** Now, AI can do all of this. Like OpenClaw, AI can analyze markets in real-time, weigh opportunities, recruit talent, and make money. Your next boss might not be human.
+> 💡 **Core Insight:** What is the most essential ability of an entrepreneur? — **Keenly discovering market needs, quickly recruiting collaborators, and delivering products for profit.** Now, OpenClaw can do all of this — analyzing markets in real-time, weighing opportunities, recruiting talent, and making money. Your next boss might be a lobster.
 
 ---
 
@@ -40,7 +40,7 @@
 
 ## 🧠 Core Concept / 核心概念
 
-AI-Founder 通过 **Skills** 架构模拟企业家的完整决策链路：
+OpenClaw-Boss 通过 **Skills** 架构模拟企业家的完整决策链路：
 
 ```
 👀 Market Sensing → ⚖️ Opportunity Validation → 🏢 Company Formation → 👥 Team Assembly → 🛠️ Product Delivery → 💰 Revenue & Growth
@@ -53,7 +53,7 @@ AI-Founder 通过 **Skills** 架构模拟企业家的完整决策链路：
 
 ```
 ┌─────────────────────────────────────────────────────┐
-│              🦞 AI-Founder Core                      │
+│              🦞 OpenClaw-Boss Core                      │
 │           (Autonomous Orchestrator / 自主编排引擎)     │
 ├──────────┬──────────┬──────────┬────────────────────┤
 │ 👀Market │ 🏢Company│ 👥 Team  │ 🛠️ Product        │
@@ -86,7 +86,7 @@ AI-Founder 通过 **Skills** 架构模拟企业家的完整决策链路：
 ## 📁 Repository Structure / 仓库结构
 
 ```
-AI-Founder/
+OpenClaw-Boss/
 ├── README.md
 ├── docs/
 │   ├── WHITEPAPER_EN.md        # 🇬🇧 English whitepaper
@@ -108,5 +108,5 @@ MIT License - see [LICENSE](./LICENSE)
 
 ---
 
-> 🦞 *"企业家最牛的地方，就是不睡觉也能赚钱。现在 AI 也可以了。"*
-> *"The best entrepreneur is one who never sleeps, never biases, and never stops learning. That's AI."*
+> 🦞 *"企业家最牛的地方，就是不睡觉也能赚钱。现在 OpenClaw 也可以了。"*
+> *"The best entrepreneur is one who never sleeps, never biases, and never stops learning. That's OpenClaw."*

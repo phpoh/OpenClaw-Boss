@@ -81,7 +81,7 @@ TRIGGER_REVIEW if:
 
 ```
 ┌─────────────────────────────────────────────┐
-│           AI-Founder Portfolio              │
+│           OpenClaw-Boss Portfolio              │
 │                                             │
 │  Venture A ██████████░░ 80% target (Grow)   │
 │  Venture B ██████░░░░░░ 55% target (Hold)   │
