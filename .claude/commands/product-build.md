@@ -4,7 +4,7 @@
 
 ## 参数
 
-- `$ARGUMENTS` — 必填，产品需求描述，如 `AI简历优化SaaS，支持多语言，核心功能：简历解析+优化建议+一键生成`。
+- `$ARGUMENTS` — 必填，产品需求描述，如 `AI错题本SaaS，支持拍照识别+自动归类+智能推荐练习`。
 
 ## 执行步骤
 
@@ -20,18 +20,19 @@
 ### 第二阶段：技术架构设计
 
 1. 使用 WebSearch 调研技术方案：
-   - "{产品描述} tech stack recommendation"
-   - "{产品描述} architecture best practices"
-   - "{产品描述} open source alternatives"
+   - "{产品描述} 技术架构 技术选型"
+   - "{产品描述} 开源方案"
+   - "{产品描述} 最佳实践"
 
 2. 根据项目类型推荐技术栈：
 
 | 项目类型 | 前端 | 后端 | 数据库 | 部署 |
 |---------|------|------|--------|------|
-| Web SaaS | Next.js + Tailwind | FastAPI / Node.js | PostgreSQL + Redis | Vercel + AWS |
-| 移动优先 | React Native | Go / Python | PostgreSQL | AWS + CloudFront |
-| API 服务 | - | FastAPI / Go | PostgreSQL + Redis | AWS Lambda |
-| 数据平台 | React + D3.js | Python | ClickHouse + PG | AWS + dbt |
+| Web SaaS | Vue3 + Element Plus / React + Ant Design | Spring Boot / FastAPI / Node.js | MySQL + Redis | 阿里云 / 腾讯云 |
+| 移动优先 | uni-app / Flutter | Spring Boot / Go | MySQL | 阿里云 + CDN |
+| 小程序 | 微信小程序 / uni-app | Spring Boot / Node.js | MySQL + Redis | 腾讯云 |
+| API 服务 | - | Spring Boot / Go | MySQL + Redis | 阿里云函数计算 |
+| 数据平台 | Vue3 + ECharts | Python | ClickHouse + MySQL | 阿里云 + DataWorks |
 
 3. 输出架构概览（文字描述组件关系）
 
@@ -68,9 +69,10 @@
 制定部署计划：
 
 1. **部署方式**：推荐金丝雀 → 蓝绿 → 全量
-2. **基础设施**：推荐云服务和配置
-3. **监控**：关键指标和告警规则
-4. **回滚方案**：回滚触发条件和操作步骤
+2. **基础设施**：推荐云服务（阿里云/腾讯云/华为云）
+3. **域名与备案**：ICP备案流程、域名解析配置
+4. **监控**：阿里云ARMS / 腾讯云监控，关键指标和告警规则
+5. **回滚方案**：回滚触发条件和操作步骤
 
 ### 第六阶段：衡量指标
 
@@ -78,10 +80,10 @@
 
 | 指标 | 目标值 | 衡量方式 |
 |------|--------|---------|
-| 用户注册量 | 第1周 > 100 | 埋点统计 |
+| 用户注册量 | 第1周 > 100 | 神策/友盟埋点 |
 | 核心功能使用率 | > 50% | 行为分析 |
 | NPS | > 20 | 用户调研 |
-| 日活/周活 | WAU/注册 > 30% | 埋点统计 |
+| 日活/周活 | WAU/注册 > 30% | 神策/友盟埋点 |
 
 ### 输出格式
 

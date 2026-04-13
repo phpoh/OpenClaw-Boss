@@ -4,7 +4,7 @@
 
 ## 参数
 
-- `$ARGUMENTS` — 可选，指定目标行业领域（逗号分隔），如 `technology,saas`。留空则使用默认领域。
+- `$ARGUMENTS` — 可选，指定目标行业领域（逗号分隔），如 `科技,SaaS`。留空则使用默认领域。
 
 ## 执行步骤
 
@@ -12,17 +12,19 @@
 
 ### 第一阶段：数据采集
 
-1. 使用 WebSearch 搜索以下关键词的最新趋势（根据用户指定的领域或默认领域 `technology, saas, consumer, healthcare`）：
-   - "{领域} emerging needs 2026"
-   - "{领域} unsolved problems"
-   - "{领域} startup opportunities"
-   - "{领域} growing market demand"
-   - "{领域} 用户痛点 新需求"
+1. 使用 WebSearch 搜索以下关键词的最新趋势（根据用户指定的领域或默认领域 `科技, SaaS, 消费, 医疗健康`）：
+   - "{领域} 新需求 市场机会 2026"
+   - "{领域} 用户痛点 未解决问题"
+   - "{领域} 创业机会 风口"
+   - "{领域} 市场增长 新兴需求"
+   - "{领域} 蓝海市场 细分赛道"
 
-2. 使用 WebSearch 搜索技术社区和产品平台的最新动态：
-   - "site:producthunt.com trending {领域}"
-   - "site:reddit.com {领域} pain points"
-   - "site:news.ycombinator.com {领域}"
+2. 使用 WebSearch 搜索国内平台和社区的最新动态：
+   - "site:36kr.com {领域} 趋势"
+   - "site:zhihu.com {领域} 痛点 需求"
+   - "site:juejin.cn {领域} 新机会"
+   - "{领域} site:itjuzi.com 投融资"
+   - "{领域} 百度指数 增长"
 
 ### 第二阶段：噪声过滤
 
@@ -30,6 +32,7 @@
 - 去除重复和推广内容
 - 只保留与目标领域强相关的洞察
 - 优先保留包含具体数据支撑的观点
+- 优先引用36氪、艾瑞咨询、QuestMobile、IT桔子等权威来源
 
 ### 第三阶段：模式识别
 
