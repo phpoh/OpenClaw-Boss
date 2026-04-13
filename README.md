@@ -168,6 +168,10 @@ OpenClaw-Boss/
 └── LICENSE
 ```
 
+## ⭐ Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=phpoh/OpenClaw-Boss&type=Date)](https://star-history.com/#phpoh/OpenClaw-Boss&Date)
+
 ## 📜 License
 
 MIT License - see [LICENSE](./LICENSE)
