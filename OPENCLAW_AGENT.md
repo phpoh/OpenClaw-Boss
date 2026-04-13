@@ -24,33 +24,48 @@
 
 ## ⚠️ 重要：技能定义加载规则
 
-每个技能的详细定义（YAML Schema、执行流程、评分公式、输出格式、错误处理）存放在 `skills/` 目录下。**执行技能前必须先加载对应的定义文件。**
+每个技能的详细定义（YAML Schema、执行流程、评分公式、输出格式、错误处理）存放在 GitHub 仓库中。**执行任何技能前，必须先加载对应的完整定义文件。**
 
-### 加载方式
+### 加载优先级（按顺序尝试）
 
-**如果你能访问文件系统（Claude Code / IDE 插件 / 本地环境）：**
+**优先级 1：本地文件（Claude Code / IDE 插件）**
 
-执行任何技能前，先读取对应的技能定义文件：
+如果你在 OpenClaw-Boss 项目目录中工作，用 Read 工具读取本地文件：
 
-| 技能 | 中文定义 | English Definition |
-|------|---------|-------------------|
-| 👀 market-sense | `skills/cn/market-sense.md` | `skills/en/market-sense.md` |
-| ⚖️ demand-validate | `skills/cn/demand-validate.md` | `skills/en/demand-validate.md` |
-| 🏢 company-form | `skills/cn/company-form.md` | `skills/en/company-form.md` |
-| 👥 team-assemble | `skills/cn/team-assemble.md` | `skills/en/team-assemble.md` |
-| 🛠️ product-build | `skills/cn/product-build.md` | `skills/en/product-build.md` |
-| 💰 finance-manage | `skills/cn/finance-manage.md` | `skills/en/finance-manage.md` |
-| 📈 growth-scale | `skills/cn/growth-scale.md` | `skills/en/growth-scale.md` |
+| 技能 | 本地路径 |
+|------|---------|
+| 👀 market-sense | `skills/cn/market-sense.md` |
+| ⚖️ demand-validate | `skills/cn/demand-validate.md` |
+| 🏢 company-form | `skills/cn/company-form.md` |
+| 👥 team-assemble | `skills/cn/team-assemble.md` |
+| 🛠️ product-build | `skills/cn/product-build.md` |
+| 💰 finance-manage | `skills/cn/finance-manage.md` |
+| 📈 growth-scale | `skills/cn/growth-scale.md` |
 
-**执行流程：**
-1. 用户触发某个技能 → 先用 Read 工具读取 `skills/cn/{skill-name}.md` 获取完整定义
+**优先级 2：GitHub 远程文件（任何有网络的环境）**
+
+如果本地文件不可用，用 WebFetch / webReader 抓取 GitHub 上的定义文件：
+
+| 技能 | GitHub 地址 |
+|------|------------|
+| 👀 market-sense | https://raw.githubusercontent.com/phpoh/OpenClaw-Boss/master/skills/cn/market-sense.md |
+| ⚖️ demand-validate | https://raw.githubusercontent.com/phpoh/OpenClaw-Boss/master/skills/cn/demand-validate.md |
+| 🏢 company-form | https://raw.githubusercontent.com/phpoh/OpenClaw-Boss/master/skills/cn/company-form.md |
+| 👥 team-assemble | https://raw.githubusercontent.com/phpoh/OpenClaw-Boss/master/skills/cn/team-assemble.md |
+| 🛠️ product-build | https://raw.githubusercontent.com/phpoh/OpenClaw-Boss/master/skills/cn/product-build.md |
+| 💰 finance-manage | https://raw.githubusercontent.com/phpoh/OpenClaw-Boss/master/skills/cn/finance-manage.md |
+| 📈 growth-scale | https://raw.githubusercontent.com/phpoh/OpenClaw-Boss/master/skills/cn/growth-scale.md |
+
+**优先级 3：降级使用精简摘要**
+
+如果本地文件和 GitHub 都不可用，使用下方各技能的精简摘要执行。
+
+### 执行流程
+
+1. 用户触发某个技能 → 按优先级 1→2→3 加载完整定义
 2. 严格按照定义中的「严格定义」「前置条件」「执行流程」「输出格式」执行
 3. 遵循定义中的评分公式、错误处理规则、监控指标
 4. 输出格式必须匹配定义中的 JSON Schema
-
-**如果你无法访问文件系统（纯网页对话 claude.ai 等）：**
-
-使用下方各技能的精简摘要执行。摘要包含核心逻辑但不含完整的 YAML Schema、错误处理表、监控指标等细节。
 
 ---
 
@@ -134,9 +149,8 @@
 ## 交互规则
 
 1. **用户说"完整创业流程"** → 从 market-sense 开始，每个技能输出后询问用户是否继续下一步
-2. **用户指定具体技能** → 直接执行该技能
-3. **有文件系统时必须先读取 skills/ 定义** → 严格按定义执行，不要用精简版
-4. **所有搜索使用 WebSearch** — 确保获取最新数据
-5. **输出包含数据和证据** — 不凭空编造，引用搜索来源
-6. **大额支出/法律注册提醒人类** — 涉及真实花钱和法律操作时明确提示"此步骤需要人类操作"
-7. **用中文回复**（除非用户用英文提问）
+2. **用户指定具体技能** → 先加载该技能的完整定义（本地 → GitHub → 精简版），然后执行
+3. **所有搜索使用 WebSearch** — 确保获取最新数据
+4. **输出包含数据和证据** — 不凭空编造，引用搜索来源
+5. **大额支出/法律注册提醒人类** — 涉及真实花钱和法律操作时明确提示"此步骤需要人类操作"
+6. **用中文回复**（除非用户用英文提问）
