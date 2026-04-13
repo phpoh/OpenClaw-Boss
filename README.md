@@ -83,16 +83,49 @@ OpenClaw-Boss 通过 **Skills** 架构模拟企业家的完整决策链路：
 
 ---
 
+## 🚀 Quick Start / 快速使用
+
+### Claude Code 一键使用
+
+本项目已转换为 Claude Code 兼容的命令格式，可直接作为 Claude Code 自定义命令使用：
+
+1. 将 `.claude/commands/` 目录复制到你的项目根目录（或合并到已有的 `.claude/commands/` 中）
+2. 在 Claude Code 中直接调用：
+
+```
+/market-sense technology,saas          # 扫描市场机会
+/demand-validate AI简历优化服务         # 验证市场需求
+/company-form 智简科技|有限责任公司|CN-SH|50000  # 组建公司
+/team-assemble AI简历SaaS,$5000/月,8周  # 组建团队
+/product-build AI简历优化SaaS功能规划    # 产品开发规划
+/finance-manage 96000|72000|125000|80000 # 财务分析
+/growth-scale SaaS项目月收$32000,+15%   # 增长策略
+```
+
+> 每个 command 利用 Claude Code 内置的 WebSearch 等工具实际执行分析任务，不再是纯文档定义。
+
+---
+
 ## 📁 Repository Structure / 仓库结构
 
 ```
 OpenClaw-Boss/
 ├── README.md
+├── LICENSE
+├── .claude/
+│   └── commands/                # 🤖 Claude Code 可执行命令
+│       ├── market-sense.md      # 👀 市场感知
+│       ├── demand-validate.md   # ⚖️ 需求验证
+│       ├── company-form.md      # 🏢 公司组建
+│       ├── team-assemble.md     # 👥 团队组建
+│       ├── product-build.md     # 🛠️ 产品构建
+│       ├── finance-manage.md    # 💰 财务管理
+│       └── growth-scale.md      # 📈 增长扩展
 ├── docs/
 │   ├── WHITEPAPER_EN.md        # 🇬🇧 English whitepaper
 │   └── WHITEPAPER_CN.md        # 🇨🇳 中文白皮书
 ├── skills/
-│   ├── cn/                      # 🇨🇳 中文技能定义（严谨版）
+│   ├── cn/                      # 🇨🇳 中文技能定义（设计规范）
 │   │   ├── market-sense.md
 │   │   ├── demand-validate.md
 │   │   ├── company-form.md
@@ -100,7 +133,7 @@ OpenClaw-Boss/
 │   │   ├── product-build.md
 │   │   ├── finance-manage.md
 │   │   └── growth-scale.md
-│   └── en/                      # 🇬🇧 English skill definitions (rigorous)
+│   └── en/                      # 🇬🇧 English skill definitions (design spec)
 │       ├── market-sense.md
 │       ├── demand-validate.md
 │       ├── company-form.md
