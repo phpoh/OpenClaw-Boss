@@ -85,12 +85,28 @@ OpenClaw-Boss 通过 **Skills** 架构模拟企业家的完整决策链路：
 
 ## 🚀 Quick Start / 快速使用
 
-### Claude Code 一键使用
+### 方式一：粘贴即用（推荐）
 
-本项目已转换为 Claude Code 兼容的命令格式，可直接作为 Claude Code 自定义命令使用：
+打开 [OPENCLAW_AGENT.md](./OPENCLAW_AGENT.md)，将文件**全部内容复制**，粘贴到任何 Claude 对话中即可激活小龙虾。无需安装、无需配置。
 
-1. 将 `.claude/commands/` 目录复制到你的项目根目录（或合并到已有的 `.claude/commands/` 中）
-2. 在 Claude Code 中直接调用：
+**支持的对话场景：**
+- Claude Code 终端 / 桌面端 / IDE 插件
+- claude.ai 网页对话
+- Claude API 调用（作为 system prompt）
+- 任何支持长文本输入的 AI 对话工具
+
+**激活后直接说：**
+```
+扫描市场机会                    → 执行 market-sense
+验证这个需求：AI简历优化服务     → 执行 demand-validate
+完整创业流程                    → 从市场感知到增长扩展依次执行
+```
+
+> 粘贴后小龙虾会自动识别身份，你可以随时调用 7 个技能中的任意一个。
+
+### 方式二：Claude Code 命令模式
+
+如果你使用 Claude Code，可将 `.claude/commands/` 目录复制到项目根目录，然后用斜杠命令调用：
 
 ```
 /market-sense technology,saas          # 扫描市场机会
@@ -102,7 +118,14 @@ OpenClaw-Boss 通过 **Skills** 架构模拟企业家的完整决策链路：
 /growth-scale SaaS项目月收$32000,+15%   # 增长策略
 ```
 
-> 每个 command 利用 Claude Code 内置的 WebSearch 等工具实际执行分析任务，不再是纯文档定义。
+### 两种方式对比
+
+| | 粘贴 OPENCLAW_AGENT.md | Claude Code 命令 |
+|---|---|---|
+| **适用场景** | 任何 Claude 对话 | Claude Code 项目内 |
+| **使用方式** | 复制粘贴 | `/命令名` |
+| **技能范围** | 7 个技能全部内置 | 每个命令独立调用 |
+| **适合** | 快速体验、临时使用 | 长期项目、反复使用 |
 
 ---
 
@@ -111,6 +134,7 @@ OpenClaw-Boss 通过 **Skills** 架构模拟企业家的完整决策链路：
 ```
 OpenClaw-Boss/
 ├── README.md
+├── OPENCLAW_AGENT.md            # 🦞 一键激活 prompt（复制粘贴即用）
 ├── LICENSE
 ├── .claude/
 │   └── commands/                # 🤖 Claude Code 可执行命令
